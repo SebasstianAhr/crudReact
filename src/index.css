@@ -14,14 +14,10 @@ body {
 }
 
 .container-body {
-  width: 100%;
-  max-width: 1200px;
-  word-wrap: break-word;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /*box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);*/
   padding: 2rem;
 }
 
@@ -32,9 +28,8 @@ body {
 /*Table*/
 
 table {
-  padding: 2rem;
   background-color: #fff;
-  width: 100%;
+
   text-align: left;
   border-collapse: collapse;
   border-radius: 10px;
@@ -47,5 +42,67 @@ th {
 }
 
 thead {
-  border-bottom: 3px solid #f2f2f2;
+  border-bottom: 3px solid rgb(233, 233, 233);
+}
+
+.button-table {
+  border: solid rgb(233, 233, 233);
+  border-left: 1px;
+  border-top: 1px;
+  border-radius: 5px;
+  padding: 0.6rem;
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  transition: all ease 0.3s;
+}
+
+.button-table-edit:hover {
+  border-radius: 5px;
+  border: solid rgb(0, 179, 255);
+  border-left: 0.5px;
+  border-top: 0.5px;
+  color: rgb(0, 179, 255);
+  background-color: #fff;
+}
+
+.button-table-delete:hover {
+  border-radius: 5px;
+  border: solid red;
+  border-left: 0.5px;
+  border-top: 0.5px;
+  color: red;
+  background-color: #fff;
+}
+
+.actions-table {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.th-actions-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Form*/
+
+.container-form {
+  width: 70%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(233, 233, 233);
 }

@@ -1,19 +1,24 @@
-import React from "react";
+import React from 'react';
+import Tablebody from './Tablebody';
 
 const Table = () => {
-  return (
-    <div className="container-table">
-      <table>
-        <thead>
-          <tr>
-            <th>Nombre </th>
-            <th>Descripcion</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-  );
-};
+    return (
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th className='th-actions-table'>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <Tablebody/>
+                    
+                </tbody>
+            </table>
+        </div>
+    );
+}
 
 export default Table;
